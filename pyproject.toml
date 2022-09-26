@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "example-dvc-experiments"
+version = "0.1.0"
+description = ""
+authors = ["krushna Panchvishe <krushnap@cdac.in>"]
+readme = "README.md"
+packages = [{include = "example_dvc_experiments"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dvc = {version = ">=2.9", extras = ["all"]}
+tensorflow = ">=2.5,<2.6"
+"ruamel.yaml" = ">=0.17,<0.18"
+imageio = ">=2.9,<3"
+dvclive = ">=0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
